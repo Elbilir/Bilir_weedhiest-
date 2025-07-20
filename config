@@ -1,0 +1,117 @@
+Config = Config or {}
+
+-- Set to true or false or GetConvar('UseTarget', 'false') == 'true' to use global option or script specific
+-- These have to be a string thanks to how Convars are returned.
+Config.UseTarget = GetConvar('UseTarget', 'true') == 'false'
+
+Config.Timeout = 30 * (60 * 2000)
+Config.RequiredCops = 0
+Config.weedLocation = {
+    ['coords'] = vector3(377.43, -830.2, 29.3),
+}
+
+Config.WhitelistedWeapons = {
+    [`weapon_bat`] = {
+        ['timeOut'] = 10000
+    },
+    [`weapon_combatpistol`] = {
+        ['timeOut'] = 10000
+    },
+    [`weapon_combatpdw`] = {
+        ['timeOut'] = 10000
+    },
+}
+
+Config.VitrineRewards = {
+    [1] = {
+        ['item'] = 'weed_ogkush',
+        ['amount'] = {
+            ['min'] = 1,
+            ['max'] = 3
+        },
+        ['probability'] = 0.4
+    },
+    [2] = {
+        ['item'] = 'weed_amnesia',
+        ['amount'] = {
+            ['min'] = 1,
+            ['max'] = 3
+        },
+        ['probability'] = 0.3
+    },
+    [3] = {
+        ['item'] = 'weed_skunk',
+        ['amount'] = {
+            ['min'] = 1,
+            ['max'] = 3
+        },
+        ['probability'] = 0.2
+    },
+    [4] = {
+        ['item'] = 'weed_ak47',
+        ['amount'] = {
+            ['min'] = 1,
+            ['max'] = 3
+        },
+        ['probability'] = 0.1
+    },
+}
+
+Config.Locations = {
+    [1] = {
+        ['coords'] = vector3(375.57, -829.0, 29.28),
+        ['isOpened'] = false,
+        ['isBusy'] = false,
+    },
+    [2] = {
+        ['coords'] = vector3(376.58, -827.41, 29.28),
+        ['isOpened'] = false,
+        ['isBusy'] = false,
+    },
+    [3] = {
+        ['coords'] = vector3(378.7, -827.27, 29.28),
+        ['isOpened'] = false,
+        ['isBusy'] = false,
+    },
+    [4] = {
+        ['coords'] = vector3(374.28, -830.08, 29.28),
+        ['isOpened'] = false,
+        ['isBusy'] = false,
+    },
+    [5] = {
+        ['coords'] = vector3(383.24, -827.31, 29.3),
+        ['isOpened'] = false,
+        ['isBusy'] = false,
+    },
+    [6] = {
+        ['coords'] = vector3(382.93, -819.64, 29.3),
+        ['isOpened'] = false,
+        ['isBusy'] = false,
+    },
+    [7] = {
+        ['coords'] = vector3(381.21, -819.62, 29.3),
+        ['isOpened'] = false,
+        ['isBusy'] = false,
+    },
+    [8] = {
+        ['coords'] = vector3(379.25, -819.64, 29.3),
+        ['isOpened'] = false,
+        ['isBusy'] = false,
+    },
+    [9] = {
+        ['coords'] = vector3(375.7, -824.22, 29.09),
+        ['isOpened'] = false,
+        ['isBusy'] = false,
+    },
+    [10] = {
+        ['coords'] = vector3(382.38, -816.66, 29.3),
+        ['isOpened'] = false,
+        ['isBusy'] = false,
+    },
+    [11] = {
+        ['coords'] = vector3(374.55, -816.8, 29.3),
+        ['isOpened'] = false,
+        ['isBusy'] = false,
+    },
+}
+
